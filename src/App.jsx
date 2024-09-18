@@ -1,5 +1,7 @@
+import Router from "./Router";
+
 const App = () => {
-  return <div className="bg-blue-500">App</div>;
+  return <Router />;
 };
 
 export default App;
