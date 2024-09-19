@@ -138,8 +138,11 @@ export default {
     caretColor: ({ theme }) => theme("colors"),
     colors: ({ colors }) => ({
       myprimary: "#ffc045",
+      myprimaryHover: "#f5b029",
       mysecondary: "#3d2414",
+      mysecondaryHover: "#231105",
       myred: "#bf2222",
+      myredHover: "#990e0e",
       inherit: colors.inherit,
       current: colors.current,
       transparent: colors.transparent,

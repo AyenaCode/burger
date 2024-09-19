@@ -14,8 +14,10 @@ export const Header = () => {
           <span> Commendez votre repas en ligne</span>
         </div>
         <div className="flex items-center justify-end mt-5">
-          <Button className="bg-myprimary mr-4">inscription</Button>
-          <Button className="bg-mysecondary">Connection</Button>
+          <Button className="mr-3 tracking-widest">inscription</Button>
+          <Button className="tracking-widest" color="mysecondary">
+            Connection
+          </Button>
         </div>
       </div>
     </div>

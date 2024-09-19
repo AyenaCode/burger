@@ -1,5 +1,6 @@
 import bg from "../../../assets/images/background/bg-food.jpg";
 import hero from "../../../assets/images/background/burger-hero-top.png";
+import { Button } from "../../elements/Button";
 
 import { Container } from "../../elements/Container";
 import { Header } from "./Header";
@@ -32,6 +33,9 @@ export const HreoTop = () => {
               </h2>
             </div>
           </div>
+          <Button className="mt-5" color="mysecondary" theme="big">
+            Céer mon compte
+          </Button>
         </Container>
       </div>
     </div>
