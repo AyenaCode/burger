@@ -4,7 +4,7 @@ import { Button } from "../../elements/Button";
 
 export const Header = () => {
   return (
-    <div className="flex items-center justify-between py-10">
+    <div className="relative z-10 flex items-center justify-between py-10">
       <div className="w-full">
         <img src={Logo} alt="Burger logo" className="w-64" />
       </div>

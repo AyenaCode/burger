@@ -13,23 +13,23 @@ export const HreoTop = () => {
       >
         <Container>
           <Header />
-          <div className="w-full flex items-center">
-            <div className="w-full text-mysecondary text-xl 2/3 uppercase">
-              <h1 className=" ">
+          <div className="w-full relative mt-28">
+            <img
+              src={hero}
+              alt="un menu buregr avec frites et coca-cola"
+              className="absolute -top-64 right-0 w-1/2 z-0"
+            />
+            <div className="relative z-10 text-mysecondary uppercase">
+              <h1 className="mb-4 font-semibold">
                 C'est le moment de gouter au bon gout des hangburgesr
               </h1>
               <h2 className="font-secondary ">
-                <span className="text-8xl block ">Burger</span>
+                <span className="text-8xl block">Burger</span>
                 <span className="text-6xl"> house</span>
-                <span className="text-4xl ml-3">Click&collect</span>
+                <span className="text-4xl ml-3">
+                  Click<span className="text-myred">&</span>collect
+                </span>
               </h2>
-            </div>
-            <div className="w-1/3">
-              <img
-                src={hero}
-                alt="un menu buregr avec frites et coca-cola"
-                className=""
-              />
             </div>
           </div>
         </Container>
