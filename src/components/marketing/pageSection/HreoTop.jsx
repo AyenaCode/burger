@@ -1,6 +1,7 @@
 import bg from "../../../assets/images/background/bg-food.jpg";
-import Logo from "../../../assets/images/svg/Logo-burger-house.svg";
+
 import { Container } from "../../elements/Container";
+import { Header } from "./Header";
 
 export const HreoTop = () => {
   return (
@@ -10,7 +11,7 @@ export const HreoTop = () => {
         style={{ background: `url(${bg})` }}
       >
         <Container>
-          <img src={Logo} alt="Burger logo" />
+          <Header />
         </Container>
       </div>
     </div>
