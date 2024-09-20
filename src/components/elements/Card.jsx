@@ -2,9 +2,12 @@ import PropTypes from "prop-types";
 
 export const Card = ({ className, title1, title2, title3, image }) => {
   return (
-    <div className={`${className} relative bg-myprimary h-full uppercase p-7`}>
+    <div
+      className={`${className} rounded-md relative bg-myprimary h-full uppercase p-7`}
+    >
+      {/* <div className="absolute rounded top-0 left-0 bg-black opacity-30 w-full h-full z-10"></div>  ==> Permet de resortir le texte au changement d'image*/}
       <img
-        className="absolute top-0 left-0 rounded h-full w-full object-cover"
+        className="absolute top-0 left-0 rounded-md h-full w-full object-cover"
         src={image}
         alt={`ìmage ${title1}`}
       />
