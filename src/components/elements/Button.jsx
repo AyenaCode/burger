@@ -51,7 +51,7 @@ export const Button = ({ children, className, color, theme }) => {
 };
 
 Button.propTypes = {
-  children: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
   className: PropTypes.string,
   color: PropTypes.string,
   theme: PropTypes.string,
