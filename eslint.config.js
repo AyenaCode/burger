@@ -36,4 +36,21 @@ export default [
       "react/no-unescaped-entities": "off",
     },
   },
+  {
+    files: ["**/*.css"],
+    rules: {
+      "at-rule-no-unknown": [
+        "off",
+        {
+          ignoreAtRules: [
+            "tailwind",
+            "apply",
+            "variants",
+            "responsive",
+            "screen",
+          ],
+        },
+      ],
+    },
+  },
 ];
