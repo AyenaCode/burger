@@ -1,3 +1,4 @@
+import { Booking } from "../components/marketing/Booking";
 import { Event } from "../components/marketing/pageSection/Event";
 import { HreoTop } from "../components/marketing/pageSection/HreoTop";
 import { LastProduct } from "../components/marketing/pageSection/LastProduct";
@@ -10,6 +11,7 @@ export const HomePAge = () => {
       <LastProduct />
       <Products />
       <Event />
+      <Booking />
     </>
   );
 };

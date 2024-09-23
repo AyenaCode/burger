@@ -1079,7 +1079,7 @@ export default {
       50: "50",
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require("@tailwindcss/forms")],
   daisyui: {
     themes: ["winter"],
   },

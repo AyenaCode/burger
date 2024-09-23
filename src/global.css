@@ -16,6 +16,7 @@
 body {
   font-family: "MaPolice", sans-serif;
   @apply text-mysecondary;
+  overflow-x: hidden;
 }
 
 p {
