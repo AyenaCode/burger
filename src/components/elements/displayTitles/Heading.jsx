@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 export const Heading = ({ className, children, varient, theme, display }) => {
-  const defaultClass = "mt-5 uppercase";
+  const defaultClass = "uppercase";
   let font, color;
   switch (theme) {
     case "secondary":
@@ -25,16 +25,24 @@ export const Heading = ({ className, children, varient, theme, display }) => {
   switch (varient) {
     case "h3":
       return (
-        <div className={`${className} flex items-center justify-center my-5 `}>
-          <h3 className={`text-sm ${defaultClass} ${font} ${color}`}>
+        <div className={`${className} flex`}>
+          <h3 className={`text-2xl ${defaultClass} ${font} ${color}`}>
             {children}
           </h3>
+        </div>
+      );
+    case "h4":
+      return (
+        <div className={`${className} flex`}>
+          <h4 className={`text-lg ${defaultClass} ${font} ${color}`}>
+            {children}
+          </h4>
         </div>
       );
 
     default:
       return (
-        <div className={`${className} flex items-center justify-center my-5 `}>
+        <div className={`${className} flex`}>
           <h2
             className={` ${
               theme === "secondary" ? "text-5xl" : "text-3xl"

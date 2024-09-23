@@ -312,7 +312,7 @@ export default {
       DEFAULT: "1",
     },
     fontFamily: {
-      secondary: ["Alfa Slab One"],
+      secondary: ["title"],
       sans: [
         "ui-sans-serif",
         "system-ui",

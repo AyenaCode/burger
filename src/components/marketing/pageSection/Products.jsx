@@ -13,7 +13,9 @@ export const Products = () => {
       <HeadingTittle varient="h3">
         toujours des délicieux burgeurs
       </HeadingTittle>
-      <Heading theme="secondary">Choisisez et réservez</Heading>
+      <Heading theme="secondary" className="justify-center my-5">
+        Choisisez et réservez
+      </Heading>
       <p className="text-center">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae
         ducimus consectetur ratione voluptatibus quis voluptas perferendis,
@@ -40,7 +42,7 @@ function ProductsCard({ image }) {
         />
       </div>
       <div className="flex flex-col items-center px-5 pb-5">
-        <Heading className="font-bold mt-0" varient="h3">
+        <Heading className="font-bold my-5" varient="h3">
           Lorem ipsum dollar
         </Heading>
         <p className="text-center">
