@@ -45,7 +45,7 @@ export const Heading = ({ className, children, varient, theme, display }) => {
         <div className={`${className} flex`}>
           <h2
             className={` ${
-              theme === "secondary" ? "text-5xl" : "text-3xl"
+              theme === "secondary" ? "text-3xl md:text-5xl" : "text-3xl"
             } ${defaultClass} ${font} ${color}`}
           >
             {children}

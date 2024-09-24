@@ -13,7 +13,7 @@ export const Products = () => {
       <HeadingTittle varient="h3">
         toujours des délicieux burgeurs
       </HeadingTittle>
-      <Heading theme="secondary" className="justify-center my-5">
+      <Heading theme="secondary" className="justify-center text-center my-5">
         Choisisez et réservez
       </Heading>
       <p className="text-center">
@@ -22,7 +22,7 @@ export const Products = () => {
         ullam odit iste dolor magnam delectus distinctio officia. Velit mollitia
         illum voluptatem natus sapiente.
       </p>
-      <div className="grid grid-cols-3 gap-x-1 mt-10 mb-20">
+      <div className="grid lg:grid-cols-3 gap-x-1 mt-10 mb-20">
         <ProductsCard image={Product1} />
         <ProductsCard image={Product2} />
         <ProductsCard image={Product3} />
@@ -34,7 +34,7 @@ export const Products = () => {
 function ProductsCard({ image }) {
   return (
     <div className="w-full h-full">
-      <div className="relative w-full h-72">
+      <div className="relative w-full md:w-2/3 mx-auto lg:w-full h-72">
         <img
           src={image}
           alt="Un burgeur"
@@ -49,7 +49,7 @@ function ProductsCard({ image }) {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolore
           commodi repellat.
         </p>
-        <Button color="danger" className="font-secondary">
+        <Button color="danger" className="mb-10 lg:mb-0 font-secondary">
           Commender
         </Button>
       </div>
