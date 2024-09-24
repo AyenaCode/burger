@@ -10,19 +10,19 @@ import { Heading } from "../../elements/displayTitles/Heading";
 
 const CardSlide = ({ children, image, title, description }) => {
   return (
-    <div className="grid grid-cols-2 p-6">
-      <div className="tracking-wide text-lg leading-relaxed text-gray-800 p-10 mb-10">
+    <div className="grid md:grid-cols-2 p-6">
+      <div className="tracking-wide text-lg leading-relaxed text-gray-800 p-2 md:p-10 md:mb-10">
         <Heading varient="h4">{title}</Heading>
-        <Heading varient="h3" theme="secondary" className="  mb-5">
+        <Heading varient="h3" theme="secondary" className="mb-5">
           {description}
         </Heading>
         {children}
       </div>
-      <div className="relative h-full w-full">
+      <div className="relative h-96 md:h-full w-full">
         <img
           src={image}
           alt={`Une image pour ${title} `}
-          className="absolute top-0 left-0 object-cover w-full h-full z-0"
+          className="absolute top-0 left-0 object-cover w-full h-full  z-0"
         />
       </div>
     </div>

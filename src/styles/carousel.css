@@ -175,6 +175,12 @@
   list-style: none;
   text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+  .alice-carousel__dots {
+    bottom: 0;
+  }
+}
 .alice-carousel__dots > li {
   display: inline-block;
 }
