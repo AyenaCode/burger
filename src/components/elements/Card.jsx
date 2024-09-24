@@ -13,8 +13,8 @@ export const Card = ({ className, title1, title2, title3, image }) => {
       />
       <div className="text-white z-10 relative">
         <span className="block text-lg font-bold">{title1} </span>
-        <span className="block text-2xl font-black"> {title2} </span>
-        <span className="block text-2xl font-black"> {title3} </span>
+        <span className="block md:text-2xl font-black"> {title2} </span>
+        <span className="block md:text-2xl font-black"> {title3} </span>
       </div>
     </div>
   );

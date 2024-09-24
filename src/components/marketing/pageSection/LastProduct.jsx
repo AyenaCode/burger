@@ -7,9 +7,9 @@ import { Container } from "../../elements/Container";
 export const LastProduct = () => {
   return (
     <Container>
-      <div className="w-full h-96 px-11 my-20 grid grid-cols-2 grid-rows-2 gap-9">
+      <div className="w-full h-96 lg:px-11 my-20 grid md:grid-cols-2 md:grid-rows-2 grid-rows-3 gap-2 lg:gap-9">
         <Card
-          className="row-span-2"
+          className="md:row-span-2 "
           title1="Killer burger"
           title2="Burger le plus populaire"
           image={Last1}
