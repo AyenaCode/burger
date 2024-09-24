@@ -11,7 +11,7 @@ export const Booking = () => {
         <img
           src={Illustre1}
           alt="image burger et frites en assiete"
-          className="absolute -bottom-52 -right-96"
+          className="absolute -bottom-52 -right-80"
         />
         <img
           src={Illustre2}
@@ -31,7 +31,7 @@ export const Booking = () => {
             réservez votre table
           </Heading>
           <form className="grid grid-cols-2 gap-x7 gap-6 mt-20">
-            <div className="">
+            <div>
               <label htmlFor="name">Nom</label>
               <input
                 type="text"
@@ -40,7 +40,7 @@ export const Booking = () => {
                 className="focus:ring-myprimary focus:border-myprimary block w-full border-gray-400 rounded-md p-5"
               />
             </div>
-            <div className="">
+            <div>
               <label htmlFor="email">Email</label>
               <input
                 type="email"
@@ -49,7 +49,7 @@ export const Booking = () => {
                 className="focus:ring-myprimary focus:border-myprimary block w-full border-gray-400 rounded-md p-5"
               />
             </div>
-            <div className="">
+            <div>
               <label htmlFor="date">Date</label>
               <input
                 type="date"
@@ -57,26 +57,32 @@ export const Booking = () => {
                 className="focus:ring-myprimary focus:border-myprimary block w-full border-gray-400 rounded-md p-5"
               />
             </div>
-            <div className="0">
-              <label htmlFor="time"></label>
+            <div>
+              <label htmlFor="time">Heure</label>
               <input
                 type="time"
                 name="time"
                 className="focus:ring-myprimary focus:border-myprimary block w-full border-gray-400 rounded-md p-5"
               />
             </div>
-            <div className="">
-              <label htmlFor="Nombre de personees"></label>
+            <div>
+              <label htmlFor="number">Nombre de personnes</label>
               <input
                 type="text"
+                name="number"
                 className="focus:ring-myprimary focus:border-myprimary block w-full border-gray-400 rounded-md p-5"
               />
             </div>
-            <div className="">
-              <label htmlFor="btn">btn</label>
-              <button className="focus:ring-myprimary focus:border-myprimary block w-full border-gray-400 rounded-md p-5">
-                Reservez
-              </button>
+            <div>
+              <label htmlFor="btn" className="invisible">
+                button
+              </label>
+              <input
+                type="button"
+                name="btn"
+                className="bg-myred hover:bg-myredHover block tracking-widest uppercase font-secondary w-full border text-white text-center cursor-pointer rounded-md py-5 animate"
+                value="Réservez votre repas"
+              />
             </div>
           </form>
         </div>
