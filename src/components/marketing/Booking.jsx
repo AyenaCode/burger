@@ -75,13 +75,13 @@ export const Booking = () => {
             </div>
             <div>
               <label htmlFor="btn" className="invisible">
-                button
+                Trouver une table
               </label>
               <input
                 type="button"
                 name="btn"
                 className="bg-myred hover:bg-myredHover block tracking-widest uppercase font-secondary w-full border text-white text-center cursor-pointer rounded-md py-5 animate"
-                value="Réservez votre repas"
+                value="Trouver une table"
               />
             </div>
           </form>
