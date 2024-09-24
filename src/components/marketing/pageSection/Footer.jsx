@@ -8,15 +8,15 @@ import { Container } from "../../elements/Container";
 export const Footer = () => {
   return (
     <Container>
-      <div className="text-white relative mb-20">
+      <div className="text-white relative lg:mb-20">
         <img
           src={BgImage}
           alt="un plan de travail de cuisine ou l'on conçoit un humburger"
           className="bg-black absolute top-0 left-0 w-full h-full object-cover z-0"
         />
-        <div className="h-full w-full z-10 relative flex">
-          <div className="h-full w-full p-10 mb-20">
-            <img src={Logo} alt="Burger" className="my-10 w-2/3" />
+        <div className="h-full w-full z-10 relative md:flex">
+          <div className="h-full w-full p-10 md:mb-20">
+            <img src={Logo} alt="Burger" className="md:my-10 my-2 w-2/3" />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
               possimus delectus explicabo velit pariatur obcaecati aliquam.
@@ -27,13 +27,13 @@ export const Footer = () => {
           </div>
 
           <div className="w-full flex flex-col justify-center font-extrabold text-lg">
-            <div className="flex items-center pl-40">
+            <div className="flex items-center pl-14 lg:pl-40">
               <HiOutlineLocationMarker className="mr-2 w-10 h-10" />
               <span className="uppercase tracking-tighter">
                 15 place belleconlioin, 6900 lyon
               </span>
             </div>
-            <div className="flex items-center pl-40">
+            <div className="flex items-center pl-14 lg:pl-40">
               <HiMail className="mr-2 w-10 h-10" />
               <span className="tracking-tighter">info@burgerhouse.com</span>
             </div>

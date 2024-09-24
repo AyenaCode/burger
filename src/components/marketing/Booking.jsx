@@ -11,26 +11,29 @@ export const Booking = () => {
         <img
           src={Illustre1}
           alt="image burger et frites en assiete"
-          className="absolute -bottom-52 -right-80"
+          className="hidden lg:block absolute -bottom-52 -right-80"
         />
         <img
           src={Illustre2}
           alt="image burger"
-          className="absolute -top-20 -left-36 z-10"
+          className="hidden md:block absolute -top-20 -left-36 md:-left-48 lg:-left-36 z-10"
         />
         <img
           src={Illustre3}
           alt="image sauce pimanté"
-          className="absolute bottom-0 left-0"
+          className="hidden lg:block absolute bottom-0 left-0"
         />
-        <div className="max-w-3xl mx-auto px-10 py-20">
+        <div className="max-w-3xl mx-auto sm:px-10 md:py-20">
           <Heading varient="h3" className="justify-center">
             réservation
           </Heading>
-          <Heading className="justify-center my-5" theme="secondary">
+          <Heading
+            className="justify-center text-center my-5"
+            theme="secondary"
+          >
             réservez votre table
           </Heading>
-          <form className="grid grid-cols-2 gap-x7 gap-6 mt-20">
+          <form className="grid sm:grid-cols-2 gap-x7 gap-6 mt-20">
             <div>
               <label htmlFor="name">Nom</label>
               <input
@@ -68,8 +71,9 @@ export const Booking = () => {
             <div>
               <label htmlFor="number">Nombre de personnes</label>
               <input
-                type="text"
+                type="number"
                 name="number"
+                placeholder="5"
                 className="focus:ring-myprimary focus:border-myprimary block w-full border-gray-400 rounded-md p-5"
               />
             </div>
